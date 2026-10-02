@@ -46,3 +46,6 @@ Streamlit Community Cloud: connect repo, main file `app.py`, add secrets (`SERPE
 
 ## Team
 Abrar Hussain (lead), Sakina Jabeen, Owais Ali, Ahmad Yousif, Ayesha Khan Afridi, Nida Khan
+
+## Public demo access
+Visitors can browse every dashboard and the saved agent briefings for free. Live agent runs need a judge/team access code (`JUDGE_CODE` secret) and are capped per day and per session (`DAILY_RUN_LIMIT`, `SESSION_RUN_LIMIT`) to protect the API budget.
