@@ -1,0 +1,30 @@
+mineral,stage,country,iso3,share_pct
+Lithium,Mining,Australia,AUS,47
+Lithium,Mining,Chile,CHL,24
+Lithium,Mining,China,CHN,15
+Lithium,Mining,Argentina,ARG,6
+Lithium,Mining,Other,OTH,8
+Lithium,Refining,China,CHN,65
+Lithium,Refining,Chile,CHL,20
+Lithium,Refining,Argentina,ARG,5
+Lithium,Refining,Other,OTH,10
+Cobalt,Mining,DR Congo,COD,74
+Cobalt,Mining,Indonesia,IDN,7
+Cobalt,Mining,Other,OTH,19
+Cobalt,Refining,China,CHN,76
+Cobalt,Refining,Finland,FIN,8
+Cobalt,Refining,Other,OTH,16
+Nickel,Mining,Indonesia,IDN,50
+Nickel,Mining,Philippines,PHL,10
+Nickel,Mining,Other,OTH,40
+Nickel,Refining,Indonesia,IDN,42
+Nickel,Refining,China,CHN,30
+Nickel,Refining,Other,OTH,28
+Graphite,Mining,China,CHN,77
+Graphite,Mining,Other,OTH,23
+Graphite,Refining,China,CHN,90
+Graphite,Refining,Other,OTH,10
+Battery cells,Manufacturing,China,CHN,75
+Battery cells,Manufacturing,South Korea,KOR,10
+Battery cells,Manufacturing,Japan,JPN,5
+Battery cells,Manufacturing,Other,OTH,10

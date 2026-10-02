@@ -1,0 +1,14 @@
+streamlit>=1.40
+plotly>=5.24
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+scikit-learn>=1.5
+requests>=2.32
+python-dotenv>=1.0
+pycountry>=24.6
+pyarrow>=17.0
+crewai>=0.100
+crewai-tools>=0.40
+pytest>=8.0
+ruff>=0.6

@@ -1,0 +1,79 @@
+research_task:
+  description: >
+    Research {country} (ISO3 {iso3}). Search rules: today is {today}; put the year {year} in your queries, treat only sources from the last 12 months as current, never cite YouTube, social media or forums, and if the newest source you find is older than 18 months say so explicitly. Call country_snapshot and worldbank_indicator (GDP per capita,
+    net energy imports, renewable electricity share). Then run AT LEAST 4 different web searches
+    (latest EV sales share, public charging points, petrol price, electricity price; prefer official or industry
+    bodies and the most recent year). Rules: every fact must carry value, year and the full source URL
+    exactly as returned by the search tool. If you cannot find a fact, write "NOT FOUND" for it. Never guess
+    and never reuse a stored seed value as if it were sourced; label stored seed values "SEED (unverified)".
+  expected_output: >
+    A table of at least 6 facts with columns: fact, value, year, source URL (or NOT FOUND / SEED).
+  agent: data_researcher
+
+policy_task:
+  description: >
+    Find the CURRENT EV policy status for {country} as of {today}: Search rules: today is {today}; put the year {year} in your queries, treat only sources from the last 12 months as current, never cite YouTube, social media or forums, and if the newest source you find is older than 18 months say so explicitly. targets and mandates (with yearly milestones),
+    purchase incentives and their exact amounts, import duties, charging programs. Run at least 3 web searches and
+    prefer government or regulator pages and recent news. Compare with the stored target from country_snapshot and say
+    explicitly whether it is still correct. Every policy statement needs a date and a full source URL;
+    otherwise write NOT FOUND.
+  expected_output: >
+    Dated bullet list of current policies with amounts, source URLs, and a line "Stored target still correct: yes/no/unclear".
+  agent: policy_analyst
+
+supply_chain_task:
+  description: >
+    Call mineral_concentration for Lithium, Cobalt, Nickel, Graphite and Battery cells and report the shares and
+    HHI numbers exactly as returned (label them "seed data ~2023"). Then run at least 2 web searches (put {year} in the query; never cite YouTube or forums) on
+    {country}'s role (miner, refiner, cell maker, assembler, consumer) and recent trade or export-restriction news,
+    with source URLs. Give the top 3 risks and top 3 opportunities, including battery swapping, second-life use and recycling.
+  expected_output: >
+    Risk and opportunity table citing tool numbers and source URLs for any news claim.
+  agent: supply_chain_analyst
+
+economics_task:
+  description: >
+    Using country_snapshot prices, call tco_calculator for the vehicle types that matter for {country}
+    (at least one 4-wheeler and one 2-wheeler) and oil_displacement for 10% and 30% fleet electrification.
+    Report the outputs exactly as returned and copy each tool's "assumptions" field word for word. Label every result
+    "MODEL ESTIMATE (tool output)". Never write assumptions from memory.
+  expected_output: >
+    Tables of TCO and oil displacement results, each labelled MODEL ESTIMATE with its assumptions.
+  agent: economist
+
+forecast_task:
+  description: >
+    Call ev_share_forecast for {iso3}, once with the national target share (if any) and report 2030 and 2035 share,
+    the 10-90% range and the year the target is reached. Label results "MODEL ESTIMATE (S-curve on seed history)",
+    state that history is short, and give two sentences on what could accelerate or delay adoption.
+  expected_output: >
+    Forecast summary with numbers from the tool, the MODEL ESTIMATE label and stated uncertainty.
+  agent: forecaster
+
+strategy_task:
+  description: >
+    Write an executive briefing for a {audience} in {country} using ONLY the previous task outputs. Sections:
+    (1) headline, (2) situation, (3) exactly 5 prioritized recommendations (impact, cost, timeline) that are tailored to the country's primary_segment and archetype from country_snapshot (for example: in 2/3-wheeler markets prioritise battery swapping, rider and rickshaw financing, home or solar charging and local assembly rather than generic car charging; in oil exporters focus on export revenue and grid decarbonisation; in mineral producers focus on refining and cell manufacturing),
+    (4) oil-displacement and CO2 impact, (5) supply chain risks using the tool concentration numbers,
+    (6) a 12-month watchlist of exactly 5 items. Rules: under 700 words; every factual claim cites a source URL
+    from the research or policy tasks; every calculated number is labelled MODEL ESTIMATE with its assumptions;
+    never state a budget, grant amount or policy detail that is not in the research; for each recommendation's cost give a relative tier (low / medium / high, labelled "judgment") unless a source gives an amount; today is {today}, so never give a timeline that is already in the past; copy the economist's "assumptions" text exactly under the oil-displacement section (never retype or change numbers); when quoting an EV sales share state the year and the denominator (battery-electric only or with plug-in hybrids; share of cars, of two-wheelers, or of all vehicles), treat any share above 40% in an emerging market as suspicious unless the source clearly says so, and compare against a mandate only with the matching measure; for policy targets cite the government or regulator page the policy analyst found, not a news article;
+    recommendations must respond to the CURRENT policy found by the policy analyst, not an outdated one; where a
+    fact was NOT FOUND, say so.
+  expected_output: >
+    A markdown briefing with inline source links, MODEL ESTIMATE labels and exactly 5 recommendations and 5 watchlist items.
+  agent: strategist
+
+factcheck_task:
+  description: >
+    Review the briefing. Treat numbers labelled MODEL ESTIMATE that match the economist or forecaster outputs as
+    verified calculations (keep the label and assumptions). For every other numeric or policy claim, confirm it has a
+    source URL from the research or policy outputs; mark "[unverified]" only if it has neither a URL nor a tool output.
+    Fix contradictions with the policy analyst's findings (for example, do not recommend introducing an incentive that the policy analyst found already exists). Mark "[weak source]" on any claim sourced to a video, social post or a page older than 18 months, and mark "[outdated?]" on any current-status claim whose source is older than 12 months. Add a "Sources and confidence" section that lists the
+    source URLs used, which numbers are model estimates, and which claims remain unverified or weakly sourced (never write
+    "Unverified claims: None" if any [weak source] or [outdated?] flag remains). Check that each source actually supports the claim it is attached to, that every share states its year and denominator, that no seed value (such as an import share) is presented as a different statistic (for example oil import share is not share of total energy use),
+    and that the oil assumptions text matches the economist's output. Output the FINAL
+    briefing in {language}.
+  expected_output: >
+    The final corrected briefing in {language} with a Sources and confidence section listing URLs.
+  agent: fact_checker
