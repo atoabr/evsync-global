@@ -1,11 +1,9 @@
 import hmac
 import json
 import os
-import threading
 from datetime import date
 from pathlib import Path
 import streamlit as st
-from streamlit.runtime.scriptrunner import add_script_run_ctx, get_script_run_ctx
 
 from core.briefing import offline_brief
 from core.data import countries
@@ -80,15 +78,10 @@ if run:
         from agents.crew import EVSyncCrew  # imported lazily so the app starts without crewai keys
         count_run()
         lines, feed = [], st.empty()
-        ctx = get_script_run_ctx()  # lets crew worker threads update this page safely
 
         def on_task(out):
-            try:
-                add_script_run_ctx(threading.current_thread(), ctx)
-                lines.append(f"✅ **{getattr(out, 'agent', 'Agent')}** finished a task")
-                feed.markdown("\n\n".join(lines))
-            except Exception:
-                pass  # a progress-display problem must never fail an agent task
+            lines.append(f"✅ **{getattr(out, 'agent', 'Agent')}** finished a task")
+            feed.markdown("\n\n".join(lines))
 
         with st.status("Agents working...", expanded=True) as status:
             try:
