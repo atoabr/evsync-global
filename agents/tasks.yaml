@@ -73,7 +73,16 @@ factcheck_task:
     source URLs used, which numbers are model estimates, and which claims remain unverified or weakly sourced (never write
     "Unverified claims: None" if any [weak source] or [outdated?] flag remains). Check that each source actually supports the claim it is attached to, that every share states its year and denominator, that no seed value (such as an import share) is presented as a different statistic (for example oil import share is not share of total energy use),
     and that the oil assumptions text matches the economist's output. Output the FINAL
-    briefing in {language}.
+    briefing in {language}. When {language} is not English, translate like a professional human translator, not word
+    for word: use natural, formal, newspaper-quality sentences; keep every URL, number, currency code, unit and the
+    labels MODEL ESTIMATE, [unverified], [weak source] and [outdated?] exactly as they are (you may add the translated
+    word in brackets after the label); keep markdown links as links; write section headings in {language}; keep
+    acronyms such as EV, CO2, GDP, USD in Latin letters. For Urdu use these fixed terms: electric vehicle = برقی گاڑی,
+    oil displacement = تیل کی کھپت میں کمی, energy security = توانائی کا تحفظ, import bill = درآمدی بل, charging station
+    = چارجنگ اسٹیشن, battery swapping = بیٹری سویپنگ, battery recycling = بیٹری ری سائیکلنگ, supply chain = سپلائی چین,
+    subsidy = سبسڈی, policy = پالیسی, watchlist = نگرانی کی فہرست, model estimate = ماڈل کا تخمینہ, two-wheeler =
+    دو پہیہ گاڑی, critical minerals = اہم معدنیات, import duty = درآمدی ڈیوٹی, sources and confidence = ذرائع اور اعتماد.
+    Do not use English words in Urdu sentences when an everyday Urdu word exists.
   expected_output: >
     The final corrected briefing in {language} with a Sources and confidence section listing URLs.
   agent: fact_checker
