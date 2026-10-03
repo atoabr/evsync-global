@@ -4,7 +4,7 @@
 Indonesia is poised to accelerate its transition from oil dependency by leveraging its robust nickel resources, expanding electric vehicle (EV) adoption, and enhancing local manufacturing capabilities.
 
 ## 2. Situation
-As of 2026, Indonesia's EV market is growing, with an 18.3% sales share for electric vehicles, primarily driven by government subsidies for electric motorbikes and tax incentives for battery electric vehicles (BEVs) [Focus2Move](https://www.focus2move.com/indonesian-vehicles-sales/). The country is also a significant player in the global nickel market, which is crucial for battery production [Global Battery](https://www.globalbattery.org/blog/indonesias-battery-ambition-can-industrial-growth-and-esg-leadership-go-hand-in-hand/). However, Indonesia faces challenges such as high net energy imports (45% of use) [World Bank](https://api.worldbank.org/v2/country/IDN/indicator/EG.IMP.CONS.ZS) and dependency on foreign refining and manufacturing, particularly from China.
+As of 2026, Indonesia's EV market is growing, with an 18.3% sales share for electric vehicles, primarily driven by government subsidies for electric motorbikes and tax incentives for battery electric vehicles (BEVs) [Focus2Move](https://www.focus2move.com/indonesian-vehicles-sales/). The country is also a significant player in the global nickel market, which is crucial for battery production [Global Battery](https://www.globalbattery.org/blog/indonesias-battery-ambition-can-industrial-growth-and-esg-leadership-go-hand-in-hand/). However, Indonesia faces challenges such as high net energy imports (45% of use) [World Bank](https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=ID) and dependency on foreign refining and manufacturing, particularly from China.
 
 ## 3. Prioritized Recommendations
 
@@ -54,7 +54,7 @@ This briefing outlines a strategic path for Indonesia to reduce its oil dependen
 
 - [Focus2Move](https://www.focus2move.com/indonesian-vehicles-sales/)
 - [Global Battery](https://www.globalbattery.org/blog/indonesias-battery-ambition-can-industrial-growth-and-esg-leadership-go-hand-in-hand/)
-- [World Bank](https://api.worldbank.org/v2/country/IDN/indicator/EG.IMP.CONS.ZS)
+- [World Bank](https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=ID)
 - [ICCT Roadmap](https://theicct.org/wp-content/uploads/2026/04/ID-514-%E2%80%93-IDN-roadmap-2026_working-paper_final.pdf)
 - [Climateworks](https://climateworkscentre.org/news/whats-next-for-indonesias-battery-ambitions-key-insights-from-climateworks-latest-analysis/)
 - [Tempo](https://en.tempo.co/read/2048323/indonesia-wont-extend-ev-import-incentives-in-2026)

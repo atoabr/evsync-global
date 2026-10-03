@@ -24,7 +24,11 @@ def worldbank_indicator(iso3: str, indicator: str) -> str:
         r.raise_for_status()
         data = r.json()[1] or []
         rows = [{"year": d["date"], "value": d["value"]} for d in data if d["value"] is not None]
-        return json.dumps({"source": url, "series": rows})
+        # cite the human-readable World Bank data page, not the raw API (which opens as XML)
+        iso2 = (data[0].get("country", {}).get("id") if data else None) or iso3[:2]
+        page = f"https://data.worldbank.org/indicator/{indicator}?locations={iso2}"
+        return json.dumps({"source": page, "series": rows,
+                           "note": "Cite the source URL as given. Empty recent years mean the latest data is older."})
     except Exception as e:  # network/API failure must not crash the crew
         return json.dumps({"error": str(e), "source": url})
 

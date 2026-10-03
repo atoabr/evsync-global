@@ -4,7 +4,7 @@
 "Strategic Pathways to Enhance Energy Security and Reduce Oil Dependency in the United States"
 
 ## Situation
-As of 2026, the United States is at a pivotal point in its transition to electric vehicles (EVs), with a current EV sales share of 10% of all vehicles [IEA Global EV Outlook 2026](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary). Despite significant federal and state incentives, such as tax credits and rebates, the pace of adoption is constrained by supply chain vulnerabilities and infrastructure gaps. The U.S. is a net energy exporter, with net energy imports at -9% of use [World Bank Net Energy Imports](https://api.worldbank.org/v2/country/USA/indicator/EG.IMP.CONS.ZS), yet it remains reliant on imports for critical battery materials, posing risks to energy security.
+As of 2026, the United States is at a pivotal point in its transition to electric vehicles (EVs), with a current EV sales share of 10% of all vehicles [IEA Global EV Outlook 2026](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary). Despite significant federal and state incentives, such as tax credits and rebates, the pace of adoption is constrained by supply chain vulnerabilities and infrastructure gaps. The U.S. is a net energy exporter, with net energy imports at -9% of use [World Bank Net Energy Imports](https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=US), yet it remains reliant on imports for critical battery materials, posing risks to energy security.
 
 ## Prioritized Recommendations
 
@@ -55,7 +55,7 @@ As of 2026, the United States is at a pivotal point in its transition to electri
 
 ## Sources and Confidence
 - [IEA Global EV Outlook 2026](https://www.iea.org/reports/global-ev-outlook-2026/executive-summary)
-- [World Bank Net Energy Imports](https://api.worldbank.org/v2/country/USA/indicator/EG.IMP.CONS.ZS)
+- [World Bank Net Energy Imports](https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=US)
 - [C2ES](https://www.c2es.org/document/securing-the-critical-battery-materials-supply-chain-in-the-southeast-united-states/)
 - [Fuel Cells Works](https://fuelcellsworks.com/2026/06/22/battery/us-reaches-250-000-public-ev-charging-ports)
 - [Energy.gov](https://www.energy.gov/edf/articles/sector-spotlight-critical-materials)

@@ -4,13 +4,13 @@
 Accelerating Germany's transition to electric vehicles (EVs) is crucial for reducing oil dependency, enhancing energy security, and achieving climate goals. Strategic actions can optimize economic and environmental outcomes.
 
 ## Situation
-Germany's EV market is rapidly growing, with a 29.3% sales share in 2026 [source](https://www.reuters.com/business/autos-transportation/europe-ev-market-share-tops-25-july-france-germany-drive-growth-2026-08-23/). Current policies include purchase subsidies, tax exemptions, and significant investments in charging infrastructure [source](https://alternative-fuels-observatory.ec.europa.eu/general-information/news/germanys-2026-ev-incentive-programme-supporting-socially-targeted-ev). However, the country remains heavily reliant on energy imports (70.49% in 2023) [source](https://api.worldbank.org/v2/country/DEU/indicator/EG.IMP.CONS.ZS), and faces supply chain risks due to high concentration in critical minerals like cobalt and graphite.
+Germany's EV market is rapidly growing, with a 29.3% sales share in 2026 [source](https://www.reuters.com/business/autos-transportation/europe-ev-market-share-tops-25-july-france-germany-drive-growth-2026-08-23/). Current policies include purchase subsidies, tax exemptions, and significant investments in charging infrastructure [source](https://alternative-fuels-observatory.ec.europa.eu/general-information/news/germanys-2026-ev-incentive-programme-supporting-socially-targeted-ev). However, the country remains heavily reliant on energy imports (70.49% in 2023) [source](https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=DE), and faces supply chain risks due to high concentration in critical minerals like cobalt and graphite.
 
 ## Prioritized Recommendations
 
 1. **Expand Charging Infrastructure**
    - **Impact**: High. Facilitates EV adoption by reducing range anxiety.
-   - **Cost**: Medium (judgment). Supported by €900 million investment [weak source](https://www.facebook.com/groups/1235431473831592/posts/1857542651620468/).
+   - **Cost**: Medium (judgment). Supported by â‚¬900 million investment [weak source](https://www.facebook.com/groups/1235431473831592/posts/1857542651620468/).
    - **Timeline**: Short-term (1-2 years). Accelerate deployment of fast-charging stations to complement existing 196,000 public points [source](https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-charging-chap-6-and-10).
 
 2. **Enhance Battery Recycling Programs**
@@ -26,7 +26,7 @@ Germany's EV market is rapidly growing, with a 29.3% sales share in 2026 [source
 4. **Increase Renewable Energy Integration**
    - **Impact**: High. Reduces CO2 emissions from EV charging and enhances energy security.
    - **Cost**: Medium (judgment). Aligns with existing renewable energy targets.
-   - **Timeline**: Medium-term (3-5 years). Accelerate the transition to renewable sources, currently at 39.83% [source](https://api.worldbank.org/v2/country/DEU/indicator/EG.ELC.RNEW.ZS).
+   - **Timeline**: Medium-term (3-5 years). Accelerate the transition to renewable sources, currently at 39.83% [source](https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS?locations=DE).
 
 5. **Implement Consumer Education Campaigns**
    - **Impact**: Medium. Increases public awareness and acceptance of EVs.
@@ -54,12 +54,12 @@ This briefing outlines strategic actions to enhance Germany's EV transition, foc
 ## Sources and Confidence
 - EV market share in 2026: [Reuters](https://www.reuters.com/business/autos-transportation/europe-ev-market-share-tops-25-july-france-germany-drive-growth-2026-08-23/)
 - Current policies: [Alternative Fuels Observatory](https://alternative-fuels-observatory.ec.europa.eu/general-information/news/germanys-2026-ev-incentive-programme-supporting-socially-targeted-ev)
-- Energy imports: [World Bank](https://api.worldbank.org/v2/country/DEU/indicator/EG.IMP.CONS.ZS)
+- Energy imports: [World Bank](https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=DE)
 - Charging infrastructure: [IEA](https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-charging-chap-6-and-10)
 - Battery recycling: [Green Li-ion](https://www.greenli-ion.com/post/bis-black-mass-export-restrictions-directive-allocation-order)
 - Domestic battery production: [IEA](https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries)
-- Renewable energy share: [World Bank](https://api.worldbank.org/v2/country/DEU/indicator/EG.ELC.RNEW.ZS)
-- €900 million investment in charging infrastructure: [weak source](https://www.facebook.com/groups/1235431473831592/posts/1857542651620468/)
+- Renewable energy share: [World Bank](https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS?locations=DE)
+- â‚¬900 million investment in charging infrastructure: [weak source](https://www.facebook.com/groups/1235431473831592/posts/1857542651620468/)
 - Supply chain risks for cobalt, graphite, and battery cells: [unverified]
 
 MODEL ESTIMATE: Oil-displacement and CO2 impact calculations based on assumptions provided.

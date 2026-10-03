@@ -4,7 +4,7 @@
 Norway's electric vehicle (EV) transition is nearly complete, with a 97.8% EV adoption rate for new car sales in 2026. Strategic actions are needed to maintain leadership and address supply chain vulnerabilities.
 
 ## Situation
-Norway has achieved its target of 100% zero-emission new car sales by 2025, with 97.8% of new cars sold in 2026 being electric [Gridserve](https://www.gridserve.com/why-norway-leads-the-world-in-ev-adoption/). The country benefits from a robust renewable energy infrastructure, with 99.1% of electricity generated from renewable sources as of 2021 [World Bank](https://api.worldbank.org/v2/country/NOR/indicator/EG.ELC.RNEW.ZS). However, the reduction in VAT exemptions and the introduction of weight-based taxes on EVs could impact future adoption rates [Alternative Fuels Observatory](https://alternative-fuels-observatory.ec.europa.eu/transport-mode/road/norway/incentives-legislations).
+Norway has achieved its target of 100% zero-emission new car sales by 2025, with 97.8% of new cars sold in 2026 being electric [Gridserve](https://www.gridserve.com/why-norway-leads-the-world-in-ev-adoption/). The country benefits from a robust renewable energy infrastructure, with 99.1% of electricity generated from renewable sources as of 2021 [World Bank](https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS?locations=NO). However, the reduction in VAT exemptions and the introduction of weight-based taxes on EVs could impact future adoption rates [Alternative Fuels Observatory](https://alternative-fuels-observatory.ec.europa.eu/transport-mode/road/norway/incentives-legislations).
 
 ## Prioritized Recommendations
 
@@ -56,7 +56,7 @@ This briefing provides a strategic overview to guide Norway's continued leadersh
 
 ## Sources and Confidence
 - [Gridserve](https://www.gridserve.com/why-norway-leads-the-world-in-ev-adoption/): Verified source for EV adoption rates.
-- [World Bank](https://api.worldbank.org/v2/country/NOR/indicator/EG.ELC.RNEW.ZS): Verified source for renewable energy statistics.
+- [World Bank](https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS?locations=NO): Verified source for renewable energy statistics.
 - [Alternative Fuels Observatory](https://alternative-fuels-observatory.ec.europa.eu/transport-mode/road/norway/incentives-legislations): Verified source for tax policy impacts.
 - [Markets and Markets](https://www.marketsandmarkets.com/Market-Reports/geography/lithium-ion-battery-recycling-market/norway): Verified source for battery recycling market growth.
 - [Green Stocks Research](https://greenstocksresearch.com/battery-metals-stocks/): Verified source for second-life battery applications.
