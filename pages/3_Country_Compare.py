@@ -12,5 +12,11 @@ if sel:
     show = c[c.country.isin(sel)].set_index("country")[
         ["archetype", "primary_segment", "target_share", "target_year", "target_note", "petrol_usd_l",
          "elec_usd_kwh", "grid_gco2_kwh", "oil_import_pct"]]
-    st.dataframe(show.T, use_container_width=True)
+    def tidy(v):  # years and whole numbers without ".0"; blanks as a dash
+        if v != v or v is None:
+            return "-"
+        if isinstance(v, float) and v.is_integer():
+            return str(int(v))
+        return str(v)
+    st.dataframe(show.T.astype(object).apply(lambda col: col.map(tidy)), use_container_width=True)
     st.caption("Policy notes are stored seed values and may be outdated. Run the AI Analyst for current status.")

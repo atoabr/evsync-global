@@ -27,6 +27,6 @@ st.plotly_chart(fig, use_container_width=True)
 a, b, d = st.columns(3)
 a.metric("2030", f"{f['share_2030']:.0f}%")
 b.metric("2035", f"{f['share_2035']:.0f}%")
-d.metric(f"Reaches {target}%", f["year_reaching_target"] or "after 2050")
+d.metric(f"Reaches {target}%", str(int(f["year_reaching_target"])) if f["year_reaching_target"] else "after 2050")
 st.caption("Fitted on only 6 seed points with ceiling 100%; low-share countries carry wide uncertainty. "
            "Improve by fitting on analog countries and longer IEA history.")
